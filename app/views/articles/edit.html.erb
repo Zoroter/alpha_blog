@@ -1,4 +1,4 @@
-<h1> nowy artykul to jest to ;)</h1>
+<h1> Edytowanie :PogChamp: </h1>
 
  <% if @article.errors.any? %>
  <h2>The following errors prevented article from being saved</h2>
@@ -11,7 +11,7 @@
 
 
 
-<%= form_with scope: :article, url: articles_path, local: true do |f| %>
+<%= form_with(model: @article, local: true ) do |f| %>
 
     <p>
         <%= f.label :title %> <br/>
